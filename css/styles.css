@@ -1,0 +1,232 @@
+:root {
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --accent-color: #2196F3;
+    --primary-text-color: #212121;
+    --secondary-text-colour: #757575;
+    --primary-text-color-theme-dark: #FFFFFF;
+}
+
+.visually-hidden {
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px;
+}
+/* body */
+body {
+font-family: var(--primary-font);
+}
+
+/* links */
+.link{
+    text-decoration: none;
+    font-style: normal;
+    }
+.nav-link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--primary-text-color);
+}
+.nav-link:hover,
+.nav-link:focus{
+    color: var(--accent-color);
+}
+
+.logo {
+        font-family: var(--secondary-font);
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+    
+        color: var(--accent-color);
+}
+
+.second-logo {
+    color: #000000;
+}
+
+
+.mail {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--secondary-text-colour);
+}
+
+.tel {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--secondary-text-colour);
+}
+
+.mail:hover,
+.mail:focus {
+    color: var(--accent-color);
+}
+
+.tel:hover,
+.tel:focus {
+    color: var(--accent-color);
+}
+
+/* buttons */
+.button {
+    color: var(--primary-text-color);
+    cursor: pointer;
+}
+.button:hover,
+.button:focus {
+    color: var(--primary-text-color-theme-dark);
+    background: var(--accent-color);
+}
+
+/* list */
+
+.list {
+    list-style: none;
+}
+
+.project-item {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: var(--primary-text-color);
+}
+
+.project-text {
+        font-size: 16px;
+        line-height: 1.8;
+        letter-spacing: 0.03em;
+        color: var(--secondary-text-colour);
+}
+
+/* footer */
+
+.footer-logo {
+    color:var(--primary-text-color-theme-dark);
+}
+
+.footer {
+    background-color: #2F303A;
+}
+
+.adress-link {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--primary-text-color-theme-dark);
+}
+
+.mail-link,
+.tel-link {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+}
+
+.mail-link:hover {
+    color: var(--primary-text-color-theme-dark);
+}
+
+.tel-link:hover {
+    color: var(--primary-text-color-theme-dark);
+
+}
+
+/* index */
+
+.hero-title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--primary-text-color-theme-dark);
+}
+
+.hero {
+    background-color: #2F303A;
+}
+
+.hero-button {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: var(--primary-text-color-theme-dark);
+        background-color: var(--accent-color);
+        cursor: pointer;
+}
+
+.skills-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--primary-text-color);
+}
+
+.skills-text {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--secondary-text-colour);
+}
+
+.work-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--primary-text-color);
+}
+
+.our-team {
+    background-color: #F5F4FA;
+    
+}
+ 
+.team-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--primary-text-color);
+}
+
+.name {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        letter-spacing: 0.03em;
+        color: var(--primary-text-color);
+}
+
+.job-title {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.03em;
+        color: var(--secondary-text-colour);
+}
