@@ -400,13 +400,10 @@ font-family: var(--primary-font);
 
 }
 
+       /* ----------PORTFOLIO---------- */
 
+/* ----------FILTRLIST */
 
-/* index */
-
-
-
-        /* ----------PORTFOLIO---------- */
 .visually-hidden {
         position: absolute;
         width: 1px;
@@ -424,6 +421,8 @@ font-family: var(--primary-font);
 .filtr-list-item {
         display: flex;
         justify-content: center;
+        margin-bottom: 34px;
+        padding-bottom: 20px;
 }
 
 .filtr-list-button:not(:last-child) {
@@ -439,6 +438,22 @@ font-family: var(--primary-font);
         padding-left: 22px;
         border:none;
 }
+
+/*  ---------- OUR PROJECTS SECTION----------*/
+
+.projects-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+}
+
+.projects-name {
+        padding-top: 20px;
+        
+}
+
+
 
 
 
