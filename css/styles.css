@@ -18,8 +18,8 @@ p {
 }
 
 ol,ul {
-        margin-top: 0;
-        margin-bottom: 0;
+        margin: 0;
+        padding: 0;
 }
 
 img {
@@ -32,6 +32,7 @@ button {
 
 .list {
         list-style: none;
+        padding: 0px;
 }
 
 .link {
@@ -100,6 +101,7 @@ font-family: var(--primary-font);
 .head {
         padding-top: 24px;
         padding-bottom: 25px;
+        border: 1px solid #ECECEC;
         
 }
 
@@ -112,9 +114,65 @@ font-family: var(--primary-font);
 
 /* -----------HERO SECTION---------- */
 
+.hero-title {
+
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--primary-text-color-theme-dark);
+        text-align: center;
+        margin-bottom: 30px;
+
+
+
+}
+
+.hero {
+        background-color: #2F303A;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        text-align: center;
+       
+
+
+
+}
+
+
+
+.skills-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--primary-text-color);
+}
+
+.skills-text {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--secondary-text-colour);
+
+}
+
+.work-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        color: var(--primary-text-color);
+        margin-bottom: 50px;
+        text-align: center;
+}
+
 /* ----------BUTTONS---------- */
 .button {
         color: var(--primary-text-color);
+        
 
 }
 
@@ -132,15 +190,17 @@ font-family: var(--primary-font);
         color: var(--primary-text-color-theme-dark);
         background-color: var(--accent-color);
         cursor: pointer;
-        width: 200px;
-        
+        border: none;
+        border-radius: 4px;
+        padding-top: 10px; 
+        padding-right: 32px;
+        padding-bottom: 10px; 
+        padding-left: 32px;
+        background: #2196F3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
 
-}
 
-.hero-btn {
-        padding-left: 485px;
-        padding-right: 485px;
-}
 
 /* ----------SKILLS SECTION---------- */
 
@@ -162,6 +222,59 @@ font-family: var(--primary-font);
         
 }
 
+.work-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+}
+
+/* ---------- OUR TEAM SECTION---------- */
+
+.our-team {
+        background-color: #F5F4FA;
+
+
+}
+
+.team-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        
+}
+.team-card {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+}
+.team-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        color: var(--primary-text-color);
+        text-align: center;
+        margin-bottom: 50px;
+}
+
+.name-jobtitle-container {
+        text-align: center;
+        padding-top: 30px;
+}
+.name {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        letter-spacing: 0.03em;
+        color: var(--primary-text-color);
+}
+
+.job-title {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.03em;
+        color: var(--secondary-text-colour);
+        padding-top: 10px;
+}
 
 /* links */
 
@@ -185,6 +298,7 @@ font-family: var(--primary-font);
         letter-spacing: 0.03em;
     
         color: var(--accent-color);
+        
 }
 
 .second-logo {
@@ -242,10 +356,22 @@ font-family: var(--primary-font);
 
 .footer-logo {
     color:var(--primary-text-color-theme-dark);
+   
+}
+
+.footer-link-logo {
+        margin-bottom: 20px;
+        display: block;
 }
 
 .footer {
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.list-links-footer:not(:last-child) {
+        margin-bottom: 9px;
 }
 
 .adress-link {
@@ -263,6 +389,8 @@ font-family: var(--primary-font);
         color: rgba(255, 255, 255, 0.6);
 }
 
+
+
 .mail-link:hover {
     color: var(--primary-text-color-theme-dark);
 }
@@ -272,93 +400,45 @@ font-family: var(--primary-font);
 
 }
 
+
+
 /* index */
 
-.hero-title {
+
+
+        /* ----------PORTFOLIO---------- */
+.visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
         
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: var(--primary-text-color-theme-dark);
-        margin-left: 0px;
-        margin-right: 0px;
-        padding-top:106px;
-        padding-left: auto;
-        padding-right: auto;
-        text-align: center;
-        margin-bottom: 30px;
-        
-       
-        
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+                }
+
+.filtr-list-item {
+        display: flex;
+        justify-content: center;
 }
 
-.hero {
-    background-color: #2F303A;
-    width: 1200px;
-    height: 607px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    
+.filtr-list-button:not(:last-child) {
+        margin-right: 8px;
 
+}
+
+.filtr-button {
+        border-radius: 4px;
+        padding-top: 6px;
+        padding-right: 22px;
+        padding-bottom: 6px;
+        padding-left: 22px;
+        border:none;
 }
 
 
 
-.skills-title {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: var(--primary-text-color);
-}
-
-.skills-text {
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        color: var(--secondary-text-colour);
-        
-}
-
-.work-title {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
-        letter-spacing: 0.03em;
-        color: var(--primary-text-color);
-}
-
-.our-team {
-    background-color: #F5F4FA;
-    
-}
- 
-.team-title {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
-        letter-spacing: 0.03em;
-        color: var(--primary-text-color);
-}
-
-.name {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.18;
-        letter-spacing: 0.03em;
-        color: var(--primary-text-color);
-}
-
-.job-title {
-        font-size: 16px;
-        line-height: 19px;
-        letter-spacing: 0.03em;
-        color: var(--secondary-text-colour);
-}
