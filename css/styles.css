@@ -6,29 +6,165 @@
     --secondary-text-colour: #757575;
     --primary-text-color-theme-dark: #FFFFFF;
 }
-
-.visually-hidden {
-        position: absolute;
-        white-space: nowrap;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        border: 0;
-        padding: 0;
-        clip: rect(0 0 0 0);
-        clip-path: inset(50%);
-        margin: -1px;
+ 
+    /* ----------БАЗОВЕ СКИДАННЯ---------- */
+h1,
+h2,
+h3,
+h4,
+p {
+        margin-top: 0;
+        margin-bottom: 0
 }
+
+ol,ul {
+        margin-top: 0;
+        margin-bottom: 0;
+}
+
+img {
+        display: block;
+}
+
+button {
+        cursor: pointer;
+}
+
+.list {
+        list-style: none;
+}
+
+.link {
+        text-decoration: none;
+        font-style: normal;
+}
+
+
 /* body */
 body {
 font-family: var(--primary-font);
 }
 
+/* ----------HEADER---------- */
+
+.container {
+        width: 1200px;
+        margin-left: auto;
+        margin-right:auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        
+        
+        
+
+}
+.page-header-container {
+        display: flex;
+        align-items: center;
+}
+
+.nav-link-item {
+        display: flex;
+}
+
+.list-links {
+        display: flex;
+        align-items: center;
+        padding: 0;
+}
+
+.list-contacts {
+        display: flex;
+        align-items: center;
+        padding: 0;
+}
+
+.logo {
+       
+        margin-right: 93px;
+}
+
+.link-item:not(:last-child) {
+        margin-right: 50px;
+
+}
+.mail {
+        margin-left: auto;
+        margin-right: 50px;
+       
+}
+
+.tel {
+        
+}
+.head {
+        padding-top: 24px;
+        padding-bottom: 25px;
+        
+}
+
+
+/* ----------MAIN CONTENT WEB STUDIO---------- */
+.section {
+        padding-top: 94px;
+        padding-bottom: 94px;
+}
+
+/* -----------HERO SECTION---------- */
+
+/* ----------BUTTONS---------- */
+.button {
+        color: var(--primary-text-color);
+
+}
+
+.button:hover,
+.button:focus {
+        color: var(--primary-text-color-theme-dark);
+        background: var(--accent-color);
+}
+
+.hero-button {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.06em;
+        color: var(--primary-text-color-theme-dark);
+        background-color: var(--accent-color);
+        cursor: pointer;
+        width: 200px;
+        
+
+}
+
+.hero-btn {
+        padding-left: 485px;
+        padding-right: 485px;
+}
+
+/* ----------SKILLS SECTION---------- */
+
+.list-skills {
+        display: flex;
+        padding-left: 0;
+        
+       
+
+}
+
+.skills-title {
+        margin-bottom: 10px;
+}
+
+.skills-list:not(:last-child) {
+        margin-right: 30px;
+        flex-basis: calc((100% - 90px) / 2);
+        
+}
+
+
 /* links */
-.link{
-    text-decoration: none;
-    font-style: normal;
-    }
+
 .nav-link {
         font-weight: 500;
         font-size: 14px;
@@ -82,22 +218,10 @@ font-family: var(--primary-font);
     color: var(--accent-color);
 }
 
-/* buttons */
-.button {
-    color: var(--primary-text-color);
-    cursor: pointer;
-}
-.button:hover,
-.button:focus {
-    color: var(--primary-text-color-theme-dark);
-    background: var(--accent-color);
-}
 
-/* list */
 
-.list {
-    list-style: none;
-}
+/* ----------LIST---------- */
+
 
 .project-item {
         font-weight: 700;
@@ -151,31 +275,40 @@ font-family: var(--primary-font);
 /* index */
 
 .hero-title {
+        
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
-        text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--primary-text-color-theme-dark);
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top:106px;
+        padding-left: auto;
+        padding-right: auto;
+        text-align: center;
+        margin-bottom: 30px;
+        
+       
+        
 }
 
 .hero {
     background-color: #2F303A;
+    width: 1200px;
+    height: 607px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+
 }
 
-.hero-button {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.87;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        letter-spacing: 0.06em;
-        color: var(--primary-text-color-theme-dark);
-        background-color: var(--accent-color);
-        cursor: pointer;
-}
+
 
 .skills-title {
         font-weight: 700;
@@ -191,13 +324,13 @@ font-family: var(--primary-font);
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: var(--secondary-text-colour);
+        
 }
 
 .work-title {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
-        text-align: center;
         letter-spacing: 0.03em;
         color: var(--primary-text-color);
 }
@@ -211,7 +344,6 @@ font-family: var(--primary-font);
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
-        text-align: center;
         letter-spacing: 0.03em;
         color: var(--primary-text-color);
 }

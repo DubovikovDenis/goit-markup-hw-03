@@ -20,72 +20,78 @@
   <body>
     <!--Header-->
     <header class="head">
-      <a class="link logo" href="./index.html"
-        >Web<span class="second-logo">Studio</span>
-      </a>
-      <nav class="nav-link-item">
-        <ul class="list">
-          <li><a class="nav-link link" href="">Студия</a></li>
-          <li>
-            <a class="nav-link link" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li><a class="nav-link link" href="">Контакты</a></li>
-        </ul>
-      </nav>
-
-      <ul class="list">
-        <li>
-          <a class="mail link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="tel link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      <div class="container page-header-container">
+        <nav class="nav-link-item">
+          <a class="link logo" href="./index.html"
+            >Web<span class="second-logo">Studio</span>
+          </a>
+          <ul class="list list-links">
+            <li class="link-item">
+              <a class="nav-link link" href="">Студия</a>
+            </li>
+            <li class="link-item">
+              <a class="nav-link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="link-item">
+              <a class="nav-link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="mail link" href="mailto:info@devstudio.com"
+          >info@devstudio.com</a>
+        <a class="tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+      </div>
     </header>
     <!--Main content-->
     <main>
-      <section class="hero">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero-button" type="button">Заказать услугу</button>
-      </section>
+     <section class="hero section">
+       <div class="container">
+          <h1 class="hero-title">
+            Эффективные решения <br />
+            для вашего бизнеса
+          </h1>
+        <div class="hero-btn"><button class="hero-button" type="button">Заказать услугу</button></div>
+        </div>
+        </section>
 
       <!--Skills-->
-      <section>
-        <ul class="list">
-          <li>
-            <h3 class="skills-title">Внимание к деталям</h3>
-            <p class="skills-text">
-              Идейные соображения, а также начало повседневной работы по
-              формированию позиции.
-            </p>
-          </li>
-          <li>
-            <h3 class="skills-title">Пунктуальность</h3>
-            <p class="skills-text">
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
-            </p>
-          </li>
-          <li>
-            <h3 class="skills-title">Планирование</h3>
-            <p class="skills-text">
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
-          </li>
-          <li>
-            <h3 class="skills-title">Современные технологии</h3>
-            <p class="skills-text">
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
-            </p>
-          </li>
-        </ul>
-      </section>
+      <section class="section">
+          <div class="container">
+          <ul class="list list-skills">
+            <li class="skills-list">
+              <h3 class="skills-title">Внимание к деталям</h3>
+              <p class="skills-text">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+            <li class="skills-list">
+              <h3 class="skills-title">Пунктуальность</h3>
+              <p class="skills-text">
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+            <li class="skills-list">
+              <h3 class="skills-title">Планирование</h3>
+              <p class="skills-text">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+            <li class="skills-list">
+              <h3 class="skills-title">Современные технологии</h3>
+              <p class="skills-text">
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+              </p>
+            </li>
+          </ul>
+          </div>
+        </section>
+      </div>
       <!-- Skills images-->
-      <section>
+      <section class="section">
+        <div class="container">
         <h2 class="work-title">Чем мы занимаемся</h2>
         <ul class="list">
           <li>
@@ -110,9 +116,12 @@
             />
           </li>
         </ul>
+        </div>
       </section>
+     
       <!-- Our Team-->
-      <section class="our-team">
+      <section class="our-team section">
+        <div class="container">
         <h2 class="team-title">Наша команда</h2>
         <ul class="list">
           <li>
@@ -152,10 +161,13 @@
             <p class="job-title">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
+      
     </main>
     <!--Footer-->
     <footer class="footer">
+      <div class="container">
       <a class="link logo" href="./index.html"
         >Web<span class="footer-logo">Studio</span>
       </a>
@@ -182,6 +194,8 @@
           </li>
         </ul>
       </address>
+      </div>
     </footer>
+   
   </body>
 </html>
