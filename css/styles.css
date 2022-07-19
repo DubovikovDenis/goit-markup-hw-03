@@ -259,6 +259,7 @@ font-family: var(--primary-font);
 .name-jobtitle-container {
         text-align: center;
         padding-top: 30px;
+        padding-bottom: 30px;
 }
 .name {
         font-weight: 500;
@@ -450,6 +451,10 @@ font-family: var(--primary-font);
 
 .projects-name {
         padding-top: 20px;
+        border: 1px solid #EEEEEE;
+        padding-bottom: 20px;
+        padding-right: 24px;
+        padding-left: 24px;
         
 }
 
