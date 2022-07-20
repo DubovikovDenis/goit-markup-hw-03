@@ -24,6 +24,8 @@ ol,ul {
 
 img {
         display: block;
+        max-width: 100%;
+        height: auto;
 }
 
 button {
@@ -89,19 +91,22 @@ font-family: var(--primary-font);
         margin-right: 50px;
 
 }
-.mail {
+
+.list-contacts-header {
+        display: flex;
+        justify-content: center;
         margin-left: auto;
-        margin-right: 50px;
-       
 }
 
-.tel {
-        
+.mail {
+        margin-right: 50px;
 }
-.head {
+
+        
+       .head {
         padding-top: 24px;
         padding-bottom: 25px;
-        border: 1px solid #ECECEC;
+        border-bottom: 1px solid #ECECEC;
         
 }
 
@@ -228,6 +233,10 @@ font-family: var(--primary-font);
         gap: 30px;
 }
 
+.skills-section {
+        padding-top: 0;
+}
+
 /* ---------- OUR TEAM SECTION---------- */
 
 .our-team {
@@ -245,6 +254,7 @@ font-family: var(--primary-font);
 .team-card {
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
+        background-color: #FFFFFF;
 }
 .team-title {
         font-weight: 700;
@@ -274,7 +284,7 @@ font-family: var(--primary-font);
         line-height: 19px;
         letter-spacing: 0.03em;
         color: var(--secondary-text-colour);
-        padding-top: 10px;
+        margin-top: 10px;
 }
 
 /* links */
@@ -344,6 +354,7 @@ font-family: var(--primary-font);
         line-height: 2;
         letter-spacing: 0.06em;
         color: var(--primary-text-color);
+        margin-bottom: 10px;
 }
 
 .project-text {
@@ -363,6 +374,7 @@ font-family: var(--primary-font);
 .footer-link-logo {
         margin-bottom: 20px;
         display: block;
+        margin-right: 0px;
 }
 
 .footer {
@@ -403,7 +415,7 @@ font-family: var(--primary-font);
 
        /* ----------PORTFOLIO---------- */
 
-/* ----------FILTRLIST */
+/* ----------FILTRLIST---------- */
 
 .visually-hidden {
         position: absolute;
@@ -422,8 +434,7 @@ font-family: var(--primary-font);
 .filtr-list-item {
         display: flex;
         justify-content: center;
-        margin-bottom: 34px;
-        padding-bottom: 20px;
+        margin-bottom: 50px;
 }
 
 .filtr-list-button:not(:last-child) {
@@ -451,7 +462,9 @@ font-family: var(--primary-font);
 
 .projects-name {
         padding-top: 20px;
-        border: 1px solid #EEEEEE;
+        border-left: 1px solid #EEEEEE;
+        border-right: 1px solid #EEEEEE;
+        border-bottom: 1px solid #EEEEEE;
         padding-bottom: 20px;
         padding-right: 24px;
         padding-left: 24px;
